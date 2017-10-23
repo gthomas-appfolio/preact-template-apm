@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, NavItem } from 'reactstrap';
+import { Nav, NavItem } from 'react-gears';
 import { Link } from 'preact-router/match';
 
 export default () => (
@@ -15,7 +15,7 @@ export default () => (
       </Link>
     </NavItem>
     <NavItem>
-      <Link activeClassName="active" className="nav-link" href="/profile/john">
+      <Link activeClassName="active" className="nav-link" href="/profile/123">
         John
       </Link>
     </NavItem>
