@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, NavItem } from 'reactstrap';
+import { Container, Nav, NavItem } from 'react-gears';
 import { Router } from 'preact-router';
 import Header from './Header.js';
 import Home from './Home.js';
