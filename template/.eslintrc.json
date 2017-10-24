@@ -1,20 +1,4 @@
 {
   "parser": "babel-eslint",
-  "extends": "appfolio-react",
-  "rules": {
-    "react/sort-comp": [1, {
-      "order": [
-        "static-methods",
-        "everything-else",
-        "lifecycle",
-        "render"
-      ]
-    }],
-    "require-jsdoc": 0
-  },
-  "settings": {
-    "import/resolver": {
-      "webpack": {}
-    }
-  }
+  "extends": "appfolio-react"
 }
