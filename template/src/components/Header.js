@@ -1,23 +1,19 @@
 import React from 'react';
 import { Nav, NavItem } from 'react-gears';
 import { Link } from 'preact-router/match';
+import { translate } from 'react-i18next';
 
-export default () => (
-  <Nav tabs>
+export default translate('translations')(({ t }) => (
+  <Nav tabs className="mb-3">
     <NavItem>
       <Link activeClassName="active" className="nav-link" href="/">
-        Home
+        {t('nav.home')}
       </Link>
     </NavItem>
     <NavItem>
       <Link activeClassName="active" className="nav-link" href="/profile">
-        Me
-      </Link>
-    </NavItem>
-    <NavItem>
-      <Link activeClassName="active" className="nav-link" href="/profile/123">
-        John
+        {t('nav.me')}
       </Link>
     </NavItem>
   </Nav>
-);
+));
