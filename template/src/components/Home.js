@@ -1,8 +1,9 @@
 import React from 'react';
+import { translate } from 'react-i18next';
 
-export default () => (
+export default translate('translations')(({ t }) => (
   <div>
-    <h1>Home</h1>
-    <p>This is the Home component.</p>
+    <h1>{t('home.title')}</h1>
+    <p>{t('home.description')}</p>
   </div>
-);
+));

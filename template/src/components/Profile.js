@@ -1,8 +1,9 @@
 import React from 'react';
+import { translate } from 'react-i18next';
 
-export default ({ user }) => (
+export default translate('translations')(({ user, t }) => (
   <div>
-    <h1>Profile: {user}</h1>
-    <p>This is the user profile for a user named {user}.</p>
+    <h1>{t('profile.title', { user })}</h1>
+    <p>{t('profile.description', { user })}</p>
   </div>
-);
+));
